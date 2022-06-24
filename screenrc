@@ -1,0 +1,13 @@
+escape ^Jj
+##caption always "%{= b} %{= YK}%-w%<%{= Rk} %n %t /%{= GK}%+w%-02=%{= "
+hardstatus on
+hardstatus alwayslastline
+#hardstatus string "%{= G}%-Lw%{= .Y}%50> %n*%f %t%{= G}%+Lw%< %{= G}%-=%D %c:%s %m/%d/%Y"
+hardstatus string "%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %{G}%d/%m %{G}%c %{g}]"
+startup_message off
+vbell off
+autodetach on
+msgwait 1
+shell /bin/bash
+defscrollback 50000
+termcapinfo xterm|xterms|xs|rxvt|urxvt|tila ti@:te@
